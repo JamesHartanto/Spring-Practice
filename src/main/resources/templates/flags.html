@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Some Countries</title>
+    <link rel="stylesheet" type="text/css"  href="../static/styles.css" th:href="@{styles.css}" />
+</head>
+<body>
+
+    <h1>Some Countries Of The World</h1>
+
+    <h3>USA</h3>
+    <img src="../static/FlagImages/FlagUSA.png" th:src="@{FlagImages/FlagUSA.png}"/>
+    <p th:text="${WestCoastTime}">West Coast Time: UTC - 8</p>
+    <p th:text="${EastCoastTime}">East Coast Time: UTC - 5</p>
+
+    <h3>Mexico</h3>
+    <img src="../static/FlagImages/FlagMexico.png" th:src="@{FlagImages/FlagMexico.png}" />
+    <p th:text="${MexicoTime}">Mexico Time: UTC - 6</p>
+
+    <h3>France</h3>
+    <img src="../static/FlagImages/FlagFrance.png" th:src="@{FlagImages/FlagFrance.png}" />
+    <p th:text="${FranceTime}">France Time: UTC + 1</p>
+
+
+    <h3>Italy</h3>
+    <img src="../static/FlagImages/FlagItaly.png" th:src="@{FlagImages/FlagItaly.png}" />
+    <p th:text="${ItalyTime}">Italy Time: UTC + 1</p>
+
+    <h3>China</h3>
+    <img src="../static/FlagImages/FlagChina.png" th:src="@{FlagImages/FlagChina.png}" />
+    <p th:text="${ChinaTime}">China Time: UTC + 8</p>
+
+    <h3>Japan</h3>
+    <img src="../static/FlagImages/FlagJapan.png" th:src="@{FlagImages/FlagJapan.png}" />
+    <p th:text="${JapanTime}">Japan Time: UTC + 9</p>
+
+    <h3>Australia</h3>
+    <img src="../static/FlagImages/FlagAustralia.png" th:src="@{FlagImages/FlagAustralia.png}" />
+    <p th:text="${AustraliaTime}">Australia Time: UTC + (5 to 11) A LOT !!</p>
+
+
+</body>
+</html>
